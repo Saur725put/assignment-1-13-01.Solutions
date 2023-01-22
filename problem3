@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Area {
+public:
+    void printArea(int side) {
+        cout << "Area of square: " << side*side << endl;
+    }
+
+    void printArea(int length, int breadth) {
+        cout << "Area of rectangle: " << length*breadth << endl;
+    }
+};
+
+
+
+int main()
+{
+    Area obj;
+    obj.printArea(5); 
+    obj.printArea(5,7); 
+    return 0;
+}
+
+
+
